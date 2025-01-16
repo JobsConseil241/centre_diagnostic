@@ -215,7 +215,7 @@
 
         @foreach ($market as $key => $image)
             .carousel-item:nth-child({{ $key + 1 }}) {
-                background-image: url('{{ Storage::url($image->thumb_url) }}');
+                background-image: url('/public/{{ Storage::url($image->thumb_url) }}');
                 background-repeat: no-repeat;
                 background-size: 100% auto;
                 background-position: center;
@@ -383,7 +383,7 @@
             jQuery("#first").hide()
 
             const bgImage = new Image();
-            bgImage.src = "/assets/frontend/files/fond_one.jpeg"; // Remplacez par le chemin de votre image
+            bgImage.src = "/public/assets/frontend/files/fond_one.jpeg"; // Remplacez par le chemin de votre image
 
             // Ajoutez un écouteur pour vérifier si l'image est bien chargée
             bgImage.onload = function () {
@@ -414,7 +414,7 @@
             document.getElementById('loader').style.display = 'flex';
 
             const bgImage = new Image();
-            bgImage.src = "/assets/frontend/files/fond_one.jpeg"; // Remplacez par le chemin de votre image
+            bgImage.src = "/public/assets/frontend/files/fond_one.jpeg"; // Remplacez par le chemin de votre image
 
             // Ajoutez un écouteur pour vérifier si l'image est bien chargée
             bgImage.onload = function () {
