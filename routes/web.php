@@ -31,8 +31,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [WelcomeController::class, 'index'])->name('welcome');
 
 //Route::get('/agence/{nom}/faq', [WelcomeController::class, 'indexFAQ'])->name('welcomeFAQ');
-Route::get('/agence/{nom}/consulter-solde', [WelcomeController::class, 'indexConsulter'])->name('welcomeConsulter');
-Route::post('/agence/{nom}/consulter-solde', [WelcomeController::class, 'retournevalue'])->name('postConsultation');
+Route::get('/consulter-solde', [WelcomeController::class, 'indexConsulter'])->name('welcomeConsulter');
+Route::post('/consulter-solde', [WelcomeController::class, 'retournevalue'])->name('postConsultation');
 Route::get('/avis', [WelcomeController::class, 'indexAvis'])->name('welcomeAvis');
 Route::post('/avis', [WelcomeController::class, 'saveAvis'])->name('saveAvis');
 Route::get('/reclamation', [WelcomeController::class, 'indexReclamation'])->name('welcomeReclamation');
