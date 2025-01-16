@@ -12,8 +12,8 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <!-- MDB -->
-    <link rel="shortcut icon" type="image/x-icon" href="{{url('assets/frontend/files/favicon.png')}}">
-    <link href="{{url('assets/frontend/css/mdb.min.css')}}" rel="stylesheet" />
+    <link rel="shortcut icon" type="image/x-icon" href="{{url('public/assets/frontend/files/favicon.png')}}">
+    <link href="{{url('public/assets/frontend/css/mdb.min.css')}}" rel="stylesheet" />
     <!-- Font Awesome -->
     <link
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
@@ -29,10 +29,10 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.3.2/mdb.min.css"
         rel="stylesheet"
     />
-    <link rel="stylesheet" href="{{url('assets/frontend/css/style.css') }}">
+    <link rel="stylesheet" href="{{url('public/assets/frontend/css/style.css') }}">
 
-    <link rel="stylesheet" type="text/css" href="{{url('assets/frontend/css/fontawesome.css')}}">
-    <link rel="stylesheet" type="text/css" href="{{url('assets/frontend/css/all.min.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{url('public/assets/frontend/css/fontawesome.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{url('public/assets/frontend/css/all.min.css')}}">
 
     <style>
         a.disabled {
@@ -87,13 +87,13 @@
         }
 
         .bg-home{
-            background-image: url('{{url('assets/frontend/img/Fond-1.webp') }}');
+            background-image: url('{{url('public/assets/frontend/img/Fond-1.webp') }}');
             background-position: center;
             background-size: cover;
             background-attachment: fixed;
         }
         .bg-other{
-            background-image: url('{{url('assets/frontend/img/fond2.webp') }}');
+            background-image: url('{{url('public/assets/frontend/img/fond2.webp') }}');
             background-position: center;
             background-size: cover;
             background-attachment: fixed;
@@ -243,7 +243,7 @@
         <div class="container-fluid">
             <!-- Navbar brand -->
             <a class="navbar-brand nav-link" target="_blank">
-                <img style="" src="{{url('assets/frontend/files/CentreDiagnostic_invert.png') }}" class="" height="30"
+                <img style="" src="{{url('public/assets/frontend/files/CentreDiagnostic_invert.png') }}" class="" height="30"
                      loading="lazy" alt="Logo Centre-Diagnostic">
             </a>
             <button class="navbar-toggler" type="button" data-mdb-collapse-init data-mdb-target="#navbarExample01"
@@ -301,7 +301,7 @@
             <div class="col-md-12 mx-auto pt-1 acCadre d-flex justify-content-center align-items-center">
                 <div class="row mx-auto my-auto justify-content-center">
                     <div style="position:relative" class="col-md-12 mb-5 text-center">
-                        <img src="{{url('assets/frontend/files/CentreDiagnostic_invert.png') }}" alt="" srcset="" height="100">
+                        <img src="{{url('public/assets/frontend/files/CentreDiagnostic_invert.png') }}" alt="" srcset="" height="100">
                     </div>
 {{--                    <div style="position:relative" class="col-md-12 mb-2 text-start">--}}
 {{--                        <h6 style="margin-left:15%" class="text-light font-weight-bold">{{ $param->titre_service ?? "Veuillez sélectionner un service" }}</h6>--}}
@@ -321,14 +321,14 @@
                     <div style="position: relative;visibility:visible" class="col-3 mb-3 text-end rounded">
 {{--                        <a href="#" @if($agence->has_consult === 0) class="tablinks disabled" @endif id="consultData">--}}
                         <a href="/consulter-solde" @if($agence->has_consult === 0) class="tablinks disabled" @endif width="300">
-                            <img src="{{url('assets/frontend/files/4.png') }}" class="img-fluid rounded" alt="Fissure in Sandstone">
+                            <img src="{{url('public/assets/frontend/files/4.png') }}" class="img-fluid rounded" alt="Fissure in Sandstone">
                         </a>
                     </div>
 
 
 {{--                    <div style="position: relative;visibility:visible"  class="col-6 mb-3 text-end">--}}
 {{--                        <a href="/agence/{{ strtolower($agence->libelle) }}/reclamation" @if($agence->has_reclame === 0) class="tablinks disabled" @endif>--}}
-{{--                            <img src="@if($param->recla_logo !== null) {{asset('/settings/'. $param->recla_logo )}} @else {{url('assets/backend/dist/img/Dame-2-sans-texte.jpg')}} @endif" style="width:70%" class="img-fluid" alt="Fissure in Sandstone">--}}
+{{--                            <img src="@if($param->recla_logo !== null) {{asset('/settings/'. $param->recla_logo )}} @else {{url('public/assets/backend/dist/img/Dame-2-sans-texte.jpg')}} @endif" style="width:70%" class="img-fluid" alt="Fissure in Sandstone">--}}
 {{--                            <span class="card-sbtitle light-blue">{{ $param->recla_stitre ?? 'Je fais une réclamation' }} </span>--}}
 {{--                        </a>--}}
 {{--                    </div>--}}
@@ -336,7 +336,7 @@
 
                     <div style="position: relative;visibility:visible" class="col-3 mb-2 text-start rounded">
                         <a href="/avis" @if($agence->has_avis === 0) class="tablinks disabled" @endif>
-                            <img src="{{url('assets/frontend/files/6.png') }}" class="img-fluid rounded" alt="Fissure in Sandstone">
+                            <img src="{{url('public/assets/frontend/files/6.png') }}" class="img-fluid rounded" alt="Fissure in Sandstone">
 {{--                            <span class="card-sbtitle light-brown">{{ $param->avis_stitre ?? 'Je donne mon avis sur ma banque' }}</span>--}}
                         </a>
                     </div>
@@ -346,7 +346,7 @@
     </div>
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-<script src="{{url('assets/frontend/js/zoom.js')}}"></script>
+<script src="{{url('public/assets/frontend/js/zoom.js')}}"></script>
 <!-- MDB -->
 <script
     type="text/javascript"
