@@ -181,8 +181,8 @@
 
         /* Style pour le spinner */
         .spinner {
-            border: 8px solid #f3f3f3; /* Couleur du cercle externe */
-            border-top: 8px solid #0D437A; /* Couleur de l'animation */
+            border: 8px solid #177F95; /* Couleur du cercle externe */
+            border-top: 8px solid #127161; /* Couleur de l'animation */
             border-radius: 50%;
             width: 60px;
             height: 60px;
