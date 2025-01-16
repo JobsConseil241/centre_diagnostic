@@ -28,7 +28,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [WelcomeController::class, 'index'])->name('welcome');
+Route::get('/accueil', [WelcomeController::class, 'index'])->name('welcome');
 
 //Route::get('/agence/{nom}/faq', [WelcomeController::class, 'indexFAQ'])->name('welcomeFAQ');
 Route::get('/consulter-solde', [WelcomeController::class, 'indexConsulter'])->name('welcomeConsulter');
