@@ -318,7 +318,7 @@
                     <!--<a class="tablinks" href="http://10.20.20.41:8080/OnlineBankingGB/#!/login?agence=venus">-->
 
 
-                    <div style="position: relative;visibility:visible" class="col-sm-6 col-md-3 mb-3 text-end rounded">
+                    <div style="position: relative;visibility:visible" class="col-md-6 col-lg-3 mb-3 text-end rounded">
 {{--                        <a href="#" @if($agence->has_consult === 0) class="tablinks disabled" @endif id="consultData">--}}
                         <a href="/consulter-solde" @if($agence->has_consult === 0) class="tablinks disabled" @endif width="300">
                             <img src="{{url('public/assets/frontend/files/4.png') }}" class="img-fluid rounded" alt="Fissure in Sandstone">
@@ -334,7 +334,7 @@
 {{--                    </div>--}}
 
 
-                    <div style="position: relative;visibility:visible" class="col-sm-6 col-md-3 mb-2 text-start rounded">
+                    <div style="position: relative;visibility:visible" class="col-md-6 col-lg-3 mb-2 text-start rounded">
                         <a href="/avis" @if($agence->has_avis === 0) class="tablinks disabled" @endif>
                             <img src="{{url('public/assets/frontend/files/6.png') }}" class="img-fluid rounded" alt="Fissure in Sandstone">
 {{--                            <span class="card-sbtitle light-brown">{{ $param->avis_stitre ?? 'Je donne mon avis sur ma banque' }}</span>--}}
