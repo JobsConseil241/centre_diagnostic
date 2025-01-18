@@ -414,7 +414,7 @@
         .custom-radio span {
             margin-top: 5px;
             font-size: 20px; /* Taille du texte */
-            color: #105095;
+            color: #127161;
         }
     </style>
     <style>
@@ -456,22 +456,18 @@
 
 <div id="faq" class="tabcontent" style="display: none;" >
     <div class="container-fluid">
-        <div style="position:relative" class="col-md-12 mb-5 text-center">
-            <img src="{{url('public/assets/frontend/files/CentreDiagnostic_invert.png') }}" alt="" srcset="" height="100">
         </div>
-        <div align="center">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="#" style="cursor: default; color: #127161;">
-                        <h1 class="bienvenu">
-                            JE DONNE MON AVIS
-                        </h1>
-                    </a>
-                </li>
-            </ul>
-        </div>
-        <br><br>
         <div class="position-relative overflow-hidden p-md-5 text-center row bg-yother h-100" id="bg-other">
+            <div style="position:relative" class="col-md-12 mb-5 text-center">
+                <img src="{{url('public/assets/frontend/files/CentreDiagnostic_invert.png') }}" alt="" srcset="" height="100">
+            </div>
+            <div align="center" class="col-12">
+                <a class="nav-link text-center" href="#" style="cursor: default; color: #127161;">
+                    <h1 class="bienvenu">
+                        JE DONNE MON AVIS
+                    </h1>
+                </a>
+            </div>
             <div class="col-8 mx-auto my-auto text-center card p-5">
                 <form id="dynamicForm" action="" method="POST">
                     @csrf
@@ -479,7 +475,7 @@
                     @foreach($formFields as $index => $field)
                         <div class="step" id="step{{ $index+1 }}" style="display: {{ $index === 0 ? 'block' : 'none' }};">
                             <div align="center">
-                                <label style="color: #0D437A;font-weight: bold;font-size:25px" for="">{{ ucfirst($field->intitulé) }}</label>
+                                <label style="color: #127161;font-weight: bold;font-size:25px" for="">{{ ucfirst($field->intitulé) }}</label>
 
                                 <input type="hidden" name="field_id_{{ $field->id }}" value="{{ $field->id }}">
                             </div>
@@ -499,7 +495,7 @@
 
                                         @endphp
                                     @endif
-                                    <select name="{{ $field->name }}" class="form-control" style="border-color: #0F5095;height:50px" required>
+                                    <select name="{{ $field->name }}" class="form-control" style="border-color: #127161;height:50px" required>
                                         @foreach($parsed_json as $sv)
                                             @if($sv == 'Gabon')
                                                 <option selected>{{ $sv }}</option>
