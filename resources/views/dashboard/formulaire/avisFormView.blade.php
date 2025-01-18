@@ -455,56 +455,14 @@
 </div>
 
 <div id="faq" class="tabcontent" style="display: none;" >
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-transparent shadow-0">
-        <!-- Container wrapper -->
-        <div class="container-fluid">
-            <!-- Toggle button -->
-            <div class="img text-start" style="margin-left: -35px; margin-top: -150px;">
-                <img src="{{url('public/assets/backend/dist/img/Logo55.png') }}" style="height:100px;width:100px;margin-top:150px;margin-left:50px" class="img-fluid logo" alt="Fissure in Sandstone">
-            </div>
-            <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <svg class="svg-inline--fa fa-bars" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"></path></svg><!-- <i class="fas fa-bars"></i> Font Awesome fontawesome.com -->
-            </button>
-
-            <!-- Collapsible wrapper -->
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <!-- Navbar brand -->
-
-                <!-- Left links -->
-                <ul class="navbar-nav ms-auto me-auto text-end mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" style="cursor: default; color:#105095;">
-
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            <h3>&nbsp; &nbsp; &nbsp; &nbsp;</h3>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            <h3>&nbsp;</h3>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            <h3>&nbsp;</h3>
-                        </a>
-                    </li>
-                </ul>
-                <!-- Left links -->
-            </div>
-        </div>
-        <!-- Container wrapper -->
-    </nav>
-    <!-- Navbar -->
     <div class="container-fluid">
+        <div style="position:relative" class="col-md-12 mb-5 text-center">
+            <img src="{{url('public/assets/frontend/files/CentreDiagnostic_invert.png') }}" alt="" srcset="" height="100">
+        </div>
         <div align="center">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="#" style="cursor: default; color: #105095;">
+                    <a class="nav-link" href="#" style="cursor: default; color: #127161;">
                         <h1 class="bienvenu">
                             JE DONNE MON AVIS
                         </h1>
@@ -657,7 +615,7 @@
     <nav class="navbar navbar-expand-lg fixed-bottom navbar-light">
         <div class="container-fluid">
             <!-- Toggle button -->
-            <a class="navbar-brand mt-lg-0 tablinks" href="/agence/venus?click=yes">
+            <a class="navbar-brand mt-lg-0 tablinks" href="/accueil?click=yes">
                 <span class="btn text-light" style="font-size:20px; background-color: #b2b88f; border-radius: 25px;">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-bottom: 4px;">
                       <path d="M15 19L8 12L15 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
