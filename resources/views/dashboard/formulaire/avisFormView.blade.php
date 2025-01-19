@@ -461,14 +461,14 @@
             <div style="position:relative" class="col-md-12 mb-2 text-center">
                 <img src="{{url('public/assets/frontend/files/CentreDiagnostic_invert.png') }}" alt="" srcset="" height="100">
             </div>
-            <div align="center" class="col-12" style="margin: 0 0 12px;">
+            <div align="center" class="col-12 py-2" style="margin: 0 0 12px;">
                 <a class="nav-link text-center" href="#" style="cursor: default; color: white;">
                     <h1 class="bienvenu">
                         JE DONNE MON AVIS
                     </h1>
                 </a>
             </div>
-            <div class="col-8 mx-auto my-auto text-center card p-5">
+            <div class="col-8 mx-auto my-auto text-center card px-5 py-2">
                 <form id="dynamicForm" action="" method="POST">
                     @csrf
 
