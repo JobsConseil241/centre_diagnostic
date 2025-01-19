@@ -457,7 +457,7 @@
 <div id="faq" class="tabcontent" style="display: none;" >
     <div class="container-fluid">
         </div>
-        <div class="position-relative overflow-hidden p-md-5 text-center row bg-yother h-100" id="bg-other">
+        <div class="position-relative overflow-hidden p-md-5 text-center d-flex flex-column gap-3 justify-content-center row bg-yother h-100" id="bg-other">
             <div style="position:relative" class="col-md-12 mb-2 text-center">
                 <img src="{{url('public/assets/frontend/files/CentreDiagnostic_invert.png') }}" alt="" srcset="" height="100">
             </div>
