@@ -141,7 +141,7 @@ class WelcomeController extends Controller
      */
     public function saveAvis(Request $request) {
 
-        $nom = 'venus';
+//        $nom = 'venus';
 
         $data = $request->all();
 
@@ -178,7 +178,7 @@ class WelcomeController extends Controller
             ReponseAvis::create([
                 'sender_no' => $numero,
                 'reponse' => $fieldValue,
-                'agence' => Agence::where('libelle', $nom)->first()->id,
+//                'agence' => Agence::where('libelle', $nom)->first()->id,
                 'adresse_ip' => $this->getClientIPaddress(),
                 'id_champs' => $fieldId,
                 'status' => 1,
