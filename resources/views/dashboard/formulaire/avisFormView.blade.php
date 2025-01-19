@@ -461,8 +461,8 @@
             <div style="position:relative" class="col-md-12 mb-2 text-center">
                 <img src="{{url('public/assets/frontend/files/CentreDiagnostic_invert.png') }}" alt="" srcset="" height="100">
             </div>
-            <div align="center" class="col-12" style="margin: 0; margin-bottom: 12px;">
-                <a class="nav-link text-center" href="#" style="cursor: default; color: #177F95;">
+            <div align="center" class="col-12" style="margin: 0 0 12px;">
+                <a class="nav-link text-center" href="#" style="cursor: default; color: white;">
                     <h1 class="bienvenu">
                         JE DONNE MON AVIS
                     </h1>
@@ -577,13 +577,13 @@
 
                             <div class="navigation-buttons mt-5">
                                 @if($index > 0)
-                                    <button type="button" class="btn btn-outline-secondary btn-rounded border-0 m-1 bienvenu btn-lg" style="width: 150px; color: #1266f1; background: #177F95;"  onclick="prevStep({{ $index+1 }})">Précédent</button>
+                                    <button type="button" class="btn btn-outline-secondary btn-rounded border-0 m-1 bienvenu btn-lg" style="width: 150px; color: white; background: #177F95;"  onclick="prevStep({{ $index+1 }})">Précédent</button>
                                 @endif
 
                                 @if($index < count($formFields) - 1)
-                                    <button type="button" class="btn btn-outline-primary btn-rounded border-0 m-1 bienvenu btn-lg" style="width: 150px; color: #1266f1; background: #177F95;" onclick="nextStep({{ $index+1 }})">Suivant</button>
+                                    <button type="button" class="btn btn-outline-primary btn-rounded border-0 m-1 bienvenu btn-lg" style="width: 150px; color: white; background: #177F95;" onclick="nextStep({{ $index+1 }})">Suivant</button>
                                 @else
-                                    <button type="submit" class="btn btn-outline-success btn-rounded border-0 m-1 bienvenu btn-lg" style="width: 150px; color: #1266f1; background: #177F95;" >Soumettre</button>
+                                    <button type="submit" class="btn btn-outline-success btn-rounded border-0 m-1 bienvenu btn-lg" style="width: 150px; color: white; background: #177F95;" >Soumettre</button>
                                 @endif
                             </div>
                         </div>
