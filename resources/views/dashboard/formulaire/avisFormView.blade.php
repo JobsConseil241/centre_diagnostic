@@ -55,7 +55,7 @@
             {{--background-position: center;--}}
             {{--background-size: cover;--}}
             {{--background-attachment: fixed;--}}
-            height: 75vh !important;
+            height: 100vh !important;
         }
         .card-sbtitle{
             position:absolute;
@@ -458,11 +458,11 @@
     <div class="container-fluid">
         </div>
         <div class="position-relative overflow-hidden p-md-5 text-center row bg-yother h-100" id="bg-other">
-            <div style="position:relative" class="col-md-12 mb-5 text-center">
+            <div style="position:relative" class="col-md-12 mb-2 text-center">
                 <img src="{{url('public/assets/frontend/files/CentreDiagnostic_invert.png') }}" alt="" srcset="" height="100">
             </div>
-            <div align="center" class="col-12">
-                <a class="nav-link text-center" href="#" style="cursor: default; color: #127161;">
+            <div align="center" class="col-12" style="margin: 0; margin-bottom: 12px;">
+                <a class="nav-link text-center" href="#" style="cursor: default; color: #177F95;">
                     <h1 class="bienvenu">
                         JE DONNE MON AVIS
                     </h1>
@@ -475,7 +475,7 @@
                     @foreach($formFields as $index => $field)
                         <div class="step" id="step{{ $index+1 }}" style="display: {{ $index === 0 ? 'block' : 'none' }};">
                             <div align="center">
-                                <label style="color: #127161;font-weight: bold;font-size:25px" for="">{{ ucfirst($field->intitulé) }}</label>
+                                <label style="color: #177F95;font-weight: bold;font-size:25px" for="">{{ ucfirst($field->intitulé) }}</label>
 
                                 <input type="hidden" name="field_id_{{ $field->id }}" value="{{ $field->id }}">
                             </div>
@@ -577,13 +577,13 @@
 
                             <div class="navigation-buttons mt-5">
                                 @if($index > 0)
-                                    <button type="button" class="btn btn-outline-secondary btn-rounded border-0 m-1 bienvenu btn-lg" style="width: 150px; color: #1266f1; background: rgb(193, 212, 236);"  onclick="prevStep({{ $index+1 }})">Précédent</button>
+                                    <button type="button" class="btn btn-outline-secondary btn-rounded border-0 m-1 bienvenu btn-lg" style="width: 150px; color: #1266f1; background: #177F95;"  onclick="prevStep({{ $index+1 }})">Précédent</button>
                                 @endif
 
                                 @if($index < count($formFields) - 1)
-                                    <button type="button" class="btn btn-outline-primary btn-rounded border-0 m-1 bienvenu btn-lg" style="width: 150px; color: #1266f1; background: rgb(193, 212, 236);" onclick="nextStep({{ $index+1 }})">Suivant</button>
+                                    <button type="button" class="btn btn-outline-primary btn-rounded border-0 m-1 bienvenu btn-lg" style="width: 150px; color: #1266f1; background: #177F95;" onclick="nextStep({{ $index+1 }})">Suivant</button>
                                 @else
-                                    <button type="submit" class="btn btn-outline-success btn-rounded border-0 m-1 bienvenu btn-lg" style="width: 150px; color: #1266f1; background: rgb(193, 212, 236);" >Soumettre</button>
+                                    <button type="submit" class="btn btn-outline-success btn-rounded border-0 m-1 bienvenu btn-lg" style="width: 150px; color: #1266f1; background: #177F95;" >Soumettre</button>
                                 @endif
                             </div>
                         </div>
@@ -612,7 +612,7 @@
         <div class="container-fluid">
             <!-- Toggle button -->
             <a class="navbar-brand mt-lg-0 tablinks" href="/accueil?click=yes">
-                <span class="btn text-light" style="font-size:20px; background-color: #b2b88f; border-radius: 25px;">
+                <span class="btn text-light" style="font-size:20px; background-color: #177F95; border-radius: 25px;">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-bottom: 4px;">
                       <path d="M15 19L8 12L15 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
@@ -821,7 +821,7 @@
             if (result.isConfirmed) {
                 // Changer la couleur du SVG de like
                 document.getElementById(`oui_o`).style.color = '#b2b88f';
-                document.getElementById(`non_o`).style.color = '#105095'; // Reset dislike color if it was previously clicked
+                document.getElementById(`non_o`).style.color = '#177F95'; // Reset dislike color if it was previously clicked
                 // Appel AJAX pour enregistrer le like
                 saveFeedback('like');
             }
@@ -841,7 +841,7 @@
             if (result.isConfirmed) {
                 // Changer la couleur du SVG de dislike
                 document.getElementById(`non_o`).style.color = '#b2b88f';
-                document.getElementById(`oui_o`).style.color = '#105095'; // Reset like color if it was previously clicked
+                document.getElementById(`oui_o`).style.color = '#177F95'; // Reset like color if it was previously clicked
                 // Appel AJAX pour enregistrer le dislike
                 saveFeedback('dislike');
             }
