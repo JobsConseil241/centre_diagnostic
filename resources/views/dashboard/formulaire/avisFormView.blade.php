@@ -777,7 +777,7 @@
             willClose: () => {
                 if (shouldRedirect){
                     clearInterval(timerInterval);
-                    window.location.href = '/accueil'?click=yes';
+                    window.location.href = '/accueil?click=yes';
 
                     window.removeEventListener("mousemove", resetInactivityTimer);
                     window.removeEventListener("click", resetInactivityTimer);
