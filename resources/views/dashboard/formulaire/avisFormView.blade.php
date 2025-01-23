@@ -468,7 +468,7 @@
                     </h1>
                 </a>
             </div>
-            <div class="col-8 mx-auto my-3 text-center card p-5">
+            <div class="col-8 mx-auto my-3 text-center card  p-2 p-md-5">
                 <form id="dynamicForm" action="" method="POST">
                     @csrf
 
@@ -643,7 +643,7 @@
 
     window.addEventListener('load', function () {
         const bgImage = new Image();
-        bgImage.src = "/public/assets/frontend/files/fond_one.jpeg"; // Remplacez par le chemin de votre image
+        bgImage.src = "/public/assets/backend/img/logo_fond_ecran.jpg"; // Remplacez par le chemin de votre image
 
         // Ajoutez un écouteur pour vérifier si l'image est bien chargée
         bgImage.onload = function () {
